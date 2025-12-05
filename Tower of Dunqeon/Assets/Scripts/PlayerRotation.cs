@@ -16,6 +16,7 @@ public class PlayerRotation : MonoBehaviour
     {
         Ray mouseWorldRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         Physics.Raycast(mouseWorldRay, out RaycastHit hit);
-        player.transform.LookAt(hit.point);
+        Vector3 lookPlace = new(hit.point.x,player.transform.position.y,hit.point.z);
+        player.transform.LookAt(lookPlace);
     }
 }
