@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1370,13 +1370,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6294895508585220835, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1841479313}
-    - targetCorrespondingSourceObject: {fileID: 6294895508585220835, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1841479312}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
 --- !u!1 &1670326578 stripped
 GameObject:
@@ -1490,51 +1484,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 708781810}
   m_SourcePrefab: {fileID: 100100000, guid: b4773499cbcba63468d2d12f288733c1, type: 3}
---- !u!1 &1841479311 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6294895508585220835, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
-  m_PrefabInstance: {fileID: 1666783053}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1841479312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1841479311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f908525e0ad3c438c948da694e75fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 7
---- !u!54 &1841479313
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1841479311}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &1841540631
 PrefabInstance:
   m_ObjectHideFlags: 0
