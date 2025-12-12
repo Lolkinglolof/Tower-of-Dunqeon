@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float HealthAmount = 50;
 
-    // Update is called once per frame
-    void Update()
+    void OnDeath()
     {
-        
+        gameObject.SetActive(false);
     }
 }
