@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float HealthAmount = 100f;
+    protected float HealthAmount = 50;
 
     virtual public void OnTakeDamage(int DamageAmount)
     {
         HealthAmount -= DamageAmount;
-        if (HealthAmount < 0)
+        if (HealthAmount <= 0)
         {
             OnDeath();
         }

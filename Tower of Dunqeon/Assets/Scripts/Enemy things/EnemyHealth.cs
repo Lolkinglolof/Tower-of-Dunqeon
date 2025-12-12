@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
-    float HealthAmount = 50;
+    private void Awake()
+    {
+        HealthAmount = 50;
+    }
+    public void OnTakeDamage()
+    {
 
-    void OnDeath()
+    }
+    override public void OnDeath()
     {
         gameObject.SetActive(false);
     }
