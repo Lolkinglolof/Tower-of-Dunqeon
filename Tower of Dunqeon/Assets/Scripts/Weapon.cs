@@ -1,13 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    int damage = 50;
+    protected int damage = 50;
+    protected string targetTag = "enemy";
     private void OnTriggerEnter(Collider other)
     {
-        HitTarget(other);
+        if (other.gameObject.tag.ToLower() == targetTag)
+        {
+            HitTarget(other);
+        }
     }
     virtual public void HitTarget(Collider other)
     {
