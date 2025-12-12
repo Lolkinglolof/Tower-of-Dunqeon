@@ -26,8 +26,9 @@ public class Movement : MonoBehaviour
         float hx = Input.GetAxisRaw("Horizontal");
         float vz = Input.GetAxisRaw("Vertical");
         
-        Vector3 input = new Vector3(hx, 0f, vz);
+        Vector3 input = new Vector3(-hx, 0f, -vz);
         move = input.normalized;
+        move = Quaternion.AngleAxis(45, Vector3.up)*move;
     }
     void FixedUpdate()
     {
