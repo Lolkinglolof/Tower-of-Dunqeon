@@ -4,7 +4,7 @@ public class EnemyBehavior : MonoBehaviour
 {
     [SerializeField] LayerMask wallMask;
     private bool goalReached = true;
-    private float moveSpeed = 1, detectionRange = 5, engagementRange = 1;
+    [SerializeField] float moveSpeed = 200, detectionRange = 5, engagementRange = 1;
     private Vector3 goal;
     private Rigidbody body;
     GameObject player;
@@ -19,14 +19,10 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.transform.position.magnitude - transform.position.magnitude < detectionRange)
+        if (Physics.Raycast(transform.position, (player.transform.position - transform.position).normalized, out RaycastHit hit, detectionRange) && hit.collider.gameObject.CompareTag("Player"))
         {
-            Vector3 rayDirection = (player.transform.position - transform.position).normalized;
-            if (!Physics.Raycast(transform.position, rayDirection, detectionRange, wallMask))
-            {
-                goalReached = false;
-                goal = player.transform.position;
-            }
+            goalReached = false;
+            goal = player.transform.position;
         }
         if (goalReached)
         {
@@ -40,14 +36,17 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (!goalReached)
         {
-            Vector3 direction = goal - gameObject.transform.position;
-            direction.y = 0;
-            Vector3 movementVector = direction.normalized * moveSpeed * Time.deltaTime;
-            body.AddForce(movementVector);
             if ((goal - gameObject.transform.position).magnitude < engagementRange)
             {
                 goalReached = true;
             }
+            Vector3 direction = goal - gameObject.transform.position;
+            transform.LookAt(new Vector3(goal.x, transform.position.y, goal.z));
+            direction.y = 0;
+            Vector3 movementVector = direction.normalized * moveSpeed * Time.deltaTime;
+            Debug.Log(movementVector);
+            body.AddForce(movementVector);
+            
         }
     }
     private void OnCollisionEnter(Collision collision)
