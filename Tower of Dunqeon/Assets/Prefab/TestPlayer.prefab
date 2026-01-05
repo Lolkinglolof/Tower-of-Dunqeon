@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 8909436048677152970}
   - component: {fileID: 6647413827722206208}
   - component: {fileID: 9201072263609617726}
+  - component: {fileID: 266418890802594597}
   m_Layer: 0
   m_Name: hammer_uncommon
   m_TagString: Untagged
@@ -244,6 +245,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7876353, y: 0.42097342, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0.45}
+--- !u!114 &266418890802594597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134288121672334805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de4db2b11f2b464e8412f296c0746d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6294895508585220835
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +270,7 @@ GameObject:
   - component: {fileID: 2820277663754997913}
   - component: {fileID: 1709836402542151515}
   - component: {fileID: 1122210552818360514}
+  - component: {fileID: 3248752094054670316}
   - component: {fileID: 44966356255594161}
   - component: {fileID: 8114637070381037346}
   - component: {fileID: 1932005596821015148}
@@ -364,6 +378,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   direction: {x: 0, y: 0}
+--- !u!114 &3248752094054670316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294895508585220835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592c6c36c38c65f4bac888fbdae37d16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  healthSlider: {fileID: 0}
 --- !u!114 &44966356255594161
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class EnemyHealth : Health
 {
     private void Awake()
@@ -6,6 +8,7 @@ public class EnemyHealth : Health
     }
     public override void OnTakeDamage(int DamageAmount)
     {
+        Debug.Log("Enemyhit");
         base.OnTakeDamage(DamageAmount);
     }
     override public void OnDeath()
