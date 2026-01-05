@@ -33,6 +33,6 @@ public class Movement : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 movementVector = move * MoveSpeed + new Vector3(0f, rb.velocity.y, 0f);
-        rb.addForce(movementVector);
+        rb.AddForce(movementVector);
     }
 }

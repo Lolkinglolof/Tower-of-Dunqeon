@@ -29,8 +29,8 @@ public class EnemyBehavior : MonoBehaviour
         {
             Vector3 direction = goal - gameObject.transform.position;
             direction.y = 0;
-            Vector3 movementVector = direction.normalized * moveSpeed * Time.deltaTime
-            body.addForce(movementVector);
+            Vector3 movementVector = direction.normalized * moveSpeed * Time.deltaTime;
+            body.AddForce(movementVector);
             if ((goal - gameObject.transform.position).magnitude < new Vector3(1, 1, 1).magnitude)
             {
                 goalReached = true;
