@@ -37,6 +37,7 @@ public class EnemyBehavior : MonoBehaviour
         if (!goalReached)
         {
             if ((goal - gameObject.transform.position).magnitude < engagementRange)
+
             {
                 goalReached = true;
             }
