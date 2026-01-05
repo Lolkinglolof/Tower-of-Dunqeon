@@ -4,7 +4,10 @@ public class EnemyHealth : Health
     {
         HealthAmount = 50;
     }
-
+    public override void OnTakeDamage(int DamageAmount)
+    {
+        base.OnTakeDamage(DamageAmount);
+    }
     override public void OnDeath()
     {
         gameObject.SetActive(false);
