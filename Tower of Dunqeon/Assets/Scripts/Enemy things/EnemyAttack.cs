@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    float damage = 10, timer = 0.5f;
+    protected float damage = 10, timer = 0.5f;
 
-    private void OnCollisionStay(Collision collision)
+    protected virtual void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player") && timer < 0)
         {
