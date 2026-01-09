@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         health -= amount;
-        healthSlider.value = health;
+        
 
         if (health <= 0)
         {
