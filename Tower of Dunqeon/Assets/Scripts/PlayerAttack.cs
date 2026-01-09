@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -31,5 +29,25 @@ public class PlayerAttack : MonoBehaviour
     void TestAttack()
     {
         animator.SetTrigger("Attack");
+    }
+    void ChangeWeapon(GameObject newWeapon)
+    {
+        if (Weapon != null)
+        {
+            Weapon.SetActive(false);
+        }
+        Weapon = newWeapon;
+        WeaponHitbox(false);
+    }
+    void WeaponHitbox(bool b)
+    {
+        if (b)
+        {
+            Weapon.GetComponent<Collider>().enabled = true;
+        }
+        else
+        {
+            Weapon.GetComponent<Collider>().enabled = false;
+        }
     }
 }
