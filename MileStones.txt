@@ -4,8 +4,8 @@ What we have achieved
 	a simple static map
 	basic ui
 What we need now
-	better camera (either angle or invisible walls between camera and player)
-	basic menu & fix death bugs
-	boss & basic win
+	better camera (either angle or invisible walls between camera and player) L
+	basic menu & fix death bugs L
+	boss & basic win W
 
 	
