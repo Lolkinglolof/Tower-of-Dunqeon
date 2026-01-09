@@ -1,0 +1,11 @@
+What we have achieved
+	Basic Combat
+	1 enemy
+	a simple static map
+	basic ui
+What we need now
+	better camera (either angle or invisible walls between camera and player)
+	basic menu & fix death bugs
+	boss & basic win
+
+	
