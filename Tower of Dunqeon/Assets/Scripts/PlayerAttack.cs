@@ -37,17 +37,14 @@ public class PlayerAttack : MonoBehaviour
             Weapon.SetActive(false);
         }
         Weapon = newWeapon;
-        WeaponHitbox(false);
+        WeaponHitboxDeactivate();
     }
-    void WeaponHitbox(bool b)
+    public void WeaponHitboxDeactivate()
     {
-        if (b)
-        {
-            Weapon.GetComponent<Collider>().enabled = true;
-        }
-        else
-        {
-            Weapon.GetComponent<Collider>().enabled = false;
-        }
+        Weapon.transform.GetChild(0).GetComponent<Collider>().enabled = false;
+    }
+    public void WeaponHitboxActivate()
+    {
+        Weapon.transform.GetChild(0).GetComponent<Collider>().enabled = true;
     }
 }
