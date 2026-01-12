@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    protected float damage = 10, timer = 0.5f;
     private Animator animator;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     protected virtual void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") && timer < 0)
+        if (collision.gameObject.CompareTag("Player") && animator.GetCurrentAnimatorStateInfo(0).IsName("New State"))
         {
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
-            timer = 0.5f;
-        }
-        else
-        {
-            timer -= Time.deltaTime;
+            animator.SetTrigger("Attack");
         }
     }
 }
