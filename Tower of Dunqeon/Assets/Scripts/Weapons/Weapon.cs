@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    protected int damage = 50;
-    protected string targetTag = "enemy";
+    protected int damage;
+    protected string targetTag;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag.ToLower() == targetTag)
