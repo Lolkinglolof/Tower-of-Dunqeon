@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     protected float damage = 10, timer = 0.5f;
+    private Animator animator;
 
     protected virtual void OnCollisionStay(Collision collision)
     {
