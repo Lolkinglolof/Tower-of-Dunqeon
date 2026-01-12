@@ -5,10 +5,10 @@ What we have achieved
 	basic ui
 What we need now
 	better camera (either angle or invisible walls between camera and player) L ✔
-	basic menu & fix death bugs L
+	basic menu & fix death bugs L 
 	boss & basic win W
 	basic enemy attacks
 	add dodge and block
-	fix hitboxes on attacks L
+	fix hitboxes on attacks L ✔
 
 	
