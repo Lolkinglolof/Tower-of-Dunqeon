@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17739,10 +17739,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6127176546285550711, guid: 3ff3a49e1b4e0bb4692a10c58b16a423, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1138502826804382722, guid: 3ff3a49e1b4e0bb4692a10c58b16a423, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2126725932}
   m_SourcePrefab: {fileID: 100100000, guid: 3ff3a49e1b4e0bb4692a10c58b16a423, type: 3}
 --- !u!1001 &816387426
 PrefabInstance:
@@ -42380,6 +42384,32 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1945209722}
   m_SourcePrefab: {fileID: 100100000, guid: 22cf542f804f95a418f7d3ea9151fe72, type: 3}
+--- !u!1 &2126725925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1138502826804382722, guid: 3ff3a49e1b4e0bb4692a10c58b16a423, type: 3}
+  m_PrefabInstance: {fileID: 814217962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2126725932
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126725925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d56f239d6c2c9df41b40173e4def2d40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2126726728
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -45,7 +45,7 @@ public class EnemyBehavior : MonoBehaviour
             transform.LookAt(new Vector3(goal.x, transform.position.y, goal.z));
             direction.y = 0;
             Vector3 movementVector = direction.normalized * moveSpeed * Time.deltaTime;
-            Debug.Log(movementVector);
+            //Debug.Log(movementVector);
             body.AddForce(movementVector);
             
         }
