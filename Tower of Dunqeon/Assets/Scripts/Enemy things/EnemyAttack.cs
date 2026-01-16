@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
+    protected float damage = 10, timer = 1f;
     private Animator animator;
     public GameObject Wep;
 
+<<<<<<< HEAD
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -18,6 +20,18 @@ public class EnemyAttack : MonoBehaviour
             {
                 animator.SetTrigger("Attack");
             }
+=======
+    protected virtual void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && timer < 0)
+        {
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+            timer = 0.5f;
+        }
+        else
+        {
+            timer -= Time.deltaTime;
+>>>>>>> e26e845b4e63a1452e72174e8e09b59d22849414
         }
 
     }
