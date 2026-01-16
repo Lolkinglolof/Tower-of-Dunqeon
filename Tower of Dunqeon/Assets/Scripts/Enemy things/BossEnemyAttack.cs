@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BossEnemyAttack : EnemyAttack
 {
-    private void Awake()
+    private void Start()
     {
+        damage = 20;
     }
 }

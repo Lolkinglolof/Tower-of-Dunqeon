@@ -8,9 +8,11 @@ public class PlayerHealth : Health
 {
     public float maxHealth = 100;
     public Slider healthSlider;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         HealthAmount = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = HealthAmount;
@@ -24,5 +26,13 @@ public class PlayerHealth : Health
     public override void OnDeath()
     {
         SceneManager.LoadScene(0);
+    }
+    public override void OnTakeDamage(int DamageAmount)
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("TestBlock"))
+        {
+            DamageAmount = Mathf.RoundToInt(DamageAmount/2);
+        }
+        base.OnTakeDamage(DamageAmount);
     }
 }

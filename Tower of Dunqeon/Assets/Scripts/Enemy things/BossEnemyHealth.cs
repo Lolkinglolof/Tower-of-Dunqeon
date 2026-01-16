@@ -6,7 +6,7 @@ public class BossEnemyHealth : EnemyHealth
 {
     private void Awake()
     {
-        HealthAmount = 1000;
+        HealthAmount = 200;
     }
     public override void OnTakeDamage(int DamageAmount)
     {

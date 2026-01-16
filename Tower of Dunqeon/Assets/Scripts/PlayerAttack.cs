@@ -2,14 +2,12 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private GameObject player;
     public GameObject Weapon;
     [SerializeField] private float CDTime, CDRate, CDCurrent;
     private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        player = gameObject;
         animator = GetComponent<Animator>();
     }
 

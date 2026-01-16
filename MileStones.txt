@@ -10,7 +10,7 @@ What we need now
 	boss W ✔
 	basic win W 
 	basic enemy attacks L ✔
-	dodge
+	dodge L
 	block L ✔
 	fix hitboxes on attacks L ✔
 
