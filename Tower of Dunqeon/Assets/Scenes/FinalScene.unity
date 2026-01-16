@@ -7101,6 +7101,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1932005596821015148, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079637133749010492, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
+      propertyPath: wep
+      value: 
+      objectReference: {fileID: 752383805}
+    - target: {fileID: 3079637133749010492, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 1859509752}
     - target: {fileID: 3248752094054670316, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
       propertyPath: healthSlider
       value: 
@@ -7111,7 +7123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4150615039196604246, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: 4150615039196604246, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16562,6 +16574,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 492255742}
   m_SourcePrefab: {fileID: 100100000, guid: 22cf542f804f95a418f7d3ea9151fe72, type: 3}
+--- !u!1 &752383805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2979541854467980041, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
+  m_PrefabInstance: {fileID: 334371227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &755037091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36772,6 +36789,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 0.2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1859509752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1236013885722354266, guid: 32882bd3fef54a84896fa3b6b38bdc8a, type: 3}
+  m_PrefabInstance: {fileID: 334371227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1863655962 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 22cf542f804f95a418f7d3ea9151fe72, type: 3}

@@ -308,6 +308,7 @@ GameObject:
   - component: {fileID: 8114637070381037346}
   - component: {fileID: 1932005596821015148}
   - component: {fileID: 7747198036105986989}
+  - component: {fileID: 3079637133749010492}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Player
@@ -428,6 +429,7 @@ MonoBehaviour:
   HealthAmount: 0
   maxHealth: 100
   healthSlider: {fileID: 0}
+  IFrameActive: 0
 --- !u!114 &44966356255594161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,7 +472,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 7b355663bfbf10646a5a2bf65e5e1627, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -490,6 +492,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30e81d2a17d64434d8c1becd87b75b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3079637133749010492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294895508585220835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077875e3799e5ad4e96c98f32856297d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wep: {fileID: 2979541854467980041}
+  shield: {fileID: 1236013885722354266}
 --- !u!1001 &5119049640943981734
 PrefabInstance:
   m_ObjectHideFlags: 0

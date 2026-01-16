@@ -9,6 +9,7 @@ public class PlayerHealth : Health
     public float maxHealth = 100;
     public Slider healthSlider;
     private Animator animator;
+    public bool IFrameActive;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,10 @@ public class PlayerHealth : Health
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("TestBlock"))
         {
             DamageAmount = Mathf.RoundToInt(DamageAmount/2);
+        }
+        if (IFrameActive)
+        {
+            DamageAmount = 0;
         }
         base.OnTakeDamage(DamageAmount);
     }

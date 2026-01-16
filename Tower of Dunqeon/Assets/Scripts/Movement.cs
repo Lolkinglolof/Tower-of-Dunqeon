@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -17,7 +15,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,14 +23,18 @@ public class Movement : MonoBehaviour
     {
         float hx = Input.GetAxisRaw("Horizontal");
         float vz = Input.GetAxisRaw("Vertical");
-        
-        Vector3 input = new Vector3(-hx, 0f, -vz);
+
+        Vector3 input = new(-hx, 0f, -vz);
         move = input.normalized;
         //move = Quaternion.AngleAxis(45, Vector3.up)*move;
     }
     void FixedUpdate()
     {
         Vector3 movementVector = move * MoveSpeed + new Vector3(0f, rb.velocity.y, 0f);
+        if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Dodge"))
+        {
+            movementVector = MoveSpeed * 1.2f * transform.forward;
+        }
         rb.velocity = movementVector;
     }
 }
