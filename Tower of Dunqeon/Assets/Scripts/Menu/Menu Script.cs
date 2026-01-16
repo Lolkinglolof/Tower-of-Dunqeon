@@ -15,13 +15,15 @@ public class MenuScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("click");
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 100))
             {
-                if (hit.collider.CompareTag("Play"))
+                Debug.Log(hit.collider.gameObject.name);
+                if (hit.collider.gameObject.CompareTag("Play"))
                 {
                     SceneManager.LoadScene(1);
                 }
-                else if (hit.collider.CompareTag("Exit"))
+                else if (hit.collider.gameObject.CompareTag("Exit"))
                 {
                     Environment.Exit(0);
                 }

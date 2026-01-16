@@ -29,6 +29,6 @@ public class EnemyAttack : MonoBehaviour
     public void WeaponHitboxActivate()
     {
         Wep.transform.GetChild(0).GetComponent<Collider>().enabled = true;
-        Wep.GetComponent<Weapon>().targets.Clear();
+        Wep.transform.GetChild(0).GetComponent<Weapon>().targets.Clear();
     }
 }

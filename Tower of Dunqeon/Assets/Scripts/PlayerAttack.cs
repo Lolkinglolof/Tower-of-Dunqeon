@@ -46,6 +46,6 @@ public class PlayerAttack : MonoBehaviour
     public void WeaponHitboxActivate()
     {
         Weapon.transform.GetChild(0).GetComponent<Collider>().enabled = true;
-        Weapon.GetComponent<Weapon>().targets.Clear();
+        Weapon.transform.GetChild(0).GetComponent<Weapon>().targets.Clear();
     }
 }
