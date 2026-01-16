@@ -19,7 +19,8 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Physics.Raycast(transform.position, (player.transform.position - transform.position).normalized, out RaycastHit hit, detectionRange) && hit.collider.gameObject.CompareTag("Player"))
+        Ray playerDetectionRay = new(transform.position, (player.transform.position - transform.position).normalized);
+        if (Physics.Raycast(playerDetectionRay, out RaycastHit hit, detectionRange) && hit.collider.gameObject.CompareTag("Player"))
         {
             goalReached = false;
             goal = player.transform.position;

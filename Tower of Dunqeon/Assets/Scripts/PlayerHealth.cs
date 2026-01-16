@@ -3,34 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : Health
 {
-    public float health = 100;
     public float maxHealth = 100;
     public Slider healthSlider;
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
+        HealthAmount = maxHealth;
         healthSlider.maxValue = maxHealth;
-        healthSlider.value = health;
+        healthSlider.value = HealthAmount;
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthSlider.value = health;
+        healthSlider.value = HealthAmount;
     }
-
-    public void TakeDamage(float amount)
+    public override void OnDeath()
     {
-        health -= amount;
-        
-
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-            healthSlider.value = 0;
-        }
+        base.OnDeath();
+        // go to death menu
     }
 }

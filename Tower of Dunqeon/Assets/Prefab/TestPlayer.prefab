@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 8909436048677152970}
   - component: {fileID: 6647413827722206208}
   - component: {fileID: 9201072263609617726}
-  - component: {fileID: 266418890802594597}
+  - component: {fileID: 552028459154781120}
   m_Layer: 0
   m_Name: hammer_uncommon
   m_TagString: Untagged
@@ -241,11 +241,11 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.7876353, y: 0.42097342, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0.45}
---- !u!114 &266418890802594597
+--- !u!114 &552028459154781120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5134288121672334805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4de4db2b11f2b464e8412f296c0746d7, type: 3}
+  m_Script: {fileID: 11500000, guid: f346da4598507344e9cbab74995f807f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6294895508585220835
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592c6c36c38c65f4bac888fbdae37d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  HealthAmount: 0
   maxHealth: 100
   healthSlider: {fileID: 0}
 --- !u!114 &44966356255594161
